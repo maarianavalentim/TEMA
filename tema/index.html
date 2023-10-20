@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Pagina</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+        }
+        .modo-escuro{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu site</h1>
+    <button id="trocar-tema">Trocar tema</button>
+
+    <main>
+        <p>Bem-vindo ao meu site</p>
+    </main>
+
+    <script>
+        const trocarTema=document.getElementById("trocar-tema")
+        const body= document.body
+
+        trocarTema.addEventListener("click", () =>{
+            body.classList.toggle("modo-escuro")
+        })
+    </script>
+</body>
+</html>
